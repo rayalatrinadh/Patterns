@@ -1,0 +1,23 @@
+package Patterns;
+
+public class Pattern_08 {
+    public static void main(String[] args) {
+        pattern08(5);
+    }
+    static void pattern08(int n){
+        //spaces
+        for(int i = 1; i <= n; i++){
+            //spaces
+            for(int j = 1; j <=n - i; j++){
+                System.out.print(" ");
+            }
+
+            //print stars
+
+            for(int k = 1; k <= (2 * i -1);k++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
